@@ -21,6 +21,7 @@ public class ArrayListExample {
     public static int threadTotal = 200;
 
     private static List<Integer> list = new ArrayList<>();
+//    private static List<Integer> list = new ArrayList<>();
 
     public static void main(String[] args) throws Exception {
         ExecutorService executorService = Executors.newCachedThreadPool();

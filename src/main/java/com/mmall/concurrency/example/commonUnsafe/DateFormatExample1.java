@@ -22,9 +22,11 @@ public class DateFormatExample1 {
     public static int threadTotal = 200;
 
     public static void main(String[] args) throws Exception {
+        System.out.println(Integer.MAX_VALUE);
         ExecutorService executorService = Executors.newCachedThreadPool();
         final Semaphore semaphore = new Semaphore(threadTotal);
         final CountDownLatch countDownLatch = new CountDownLatch(clientTotal);
+
         for (int i = 0; i < clientTotal ; i++) {
             executorService.execute(() -> {
                 try {
