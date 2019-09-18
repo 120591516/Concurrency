@@ -20,6 +20,7 @@ public class ThreadPoolExample3 {
                     log.info("task:{}", index);
                 }
             });
+
         }
         executorService.shutdown();
     }
